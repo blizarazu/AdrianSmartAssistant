@@ -13,7 +13,7 @@
     "chromecast-scanner": "^0.5.0",
     "crypto-toolkit": "^1.0.0",
     "facebook-chat-api": "^1.2.0",
-    "google-auth-library": "^0.9.10",
+    "google-auth-library": "^0.10.0",
     "grpc": "^1.0.1",
     "html-entities": "^1.2.0",
     "keypress": "^0.2.1",
@@ -32,11 +32,14 @@
     "tail-stream": "^0.2.1",
     "tty": "^1.0.1",
     "xml2json": "^0.10.0",
-    "youtube-search": "^1.0.6"
+    "youtube-search": "^1.0.6",
+    "snyk": "^1.83.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "./adrian.sh"
+    "test": "./adrian.sh",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -51,5 +54,6 @@
   "bugs": {
     "url": "http://www.theadrianproject.com/community/"
   },
-  "homepage": "http://www.theadrianproject.com/"
+  "homepage": "http://www.theadrianproject.com/",
+  "snyk": true
 }
